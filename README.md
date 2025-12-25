@@ -48,5 +48,5 @@ This project demonstrates core C programming concepts such as file handling, str
 
 ---
 
-## 📂 Project Structure
+
 
