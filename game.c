@@ -4,8 +4,8 @@
 #include <ctype.h>
 #include <time.h>
 #include <conio.h>
-#define KBC_API_URL "https://npp-mauve.vercel.app/ask"
 
+#define KBC_API_URL "https://npp-mauve.vercel.app/ask"
 #define MAX_QUES_LEN 300
 #define MAX_OPTION_LEN 100
 const char *COLOR_END = "\033[0m";
@@ -28,6 +28,9 @@ typedef struct
 
 int read_questions(char *file_name, Question **questions);
 void print_formatted_question(Question question);
+void play_game(Question *questions, int no_of_questions);
+int use_lifeline(Question *question, int *lifeline);
+
 void random_Question(Question *question, int no_of_questions)
 {
     for (int i = no_of_questions - 1; i > 0; i--)
@@ -51,28 +54,58 @@ void call_kbc_api(const Question *q)
              q->text);
 
     printf("\n\n%sExpert says: %s", YELLOW, COLOR_END);
-    fflush(stdout); // lable prints first
+    fflush(stdout);
 
-    system(command); // prin t API response directly
+    system(command);
 
     printf("\n");
     printf("\n\nPress any key to continue...");
-    _getch(); // any key from keybord
+    _getch();
 }
 
-void play_game(Question *questions, int no_of_questions);
-int use_lifeline(Question *question, int *lifeline);
 int main()
 {
-    srand(time(NULL));
+    srand(time(NULL)); // random number generator
 
+    int choice;
+    char filename[50];
     Question *questions;
-    int no_of_questions = read_questions("questions.txt", &questions);
-    printf("\t\t %s lets play game %s", PINK, COLOR_END);
+
+    printf("\n%s=====================================%s\n", BLUE, COLOR_END);
+    printf("%s      WELCOME TO  GAME      %s\n", PINK, COLOR_END);
+    printf("%s=====================================%s\n", BLUE, COLOR_END);
+
+    printf("\n%sChoose Category:%s\n", YELLOW, COLOR_END);
+    printf("%s1. General Knowledge%s\n", GREEN, COLOR_END);
+    printf("%s2. Computer%s\n", GREEN, COLOR_END);
+    printf("%s3. Science%s\n", GREEN, COLOR_END);
+    printf("%s4. mix of questions%s\n", GREEN, COLOR_END);
+
+    printf("\n%sEnter your choice: %s", AQUA, COLOR_END);
+
+    scanf("%d", &choice);
+
+    if (choice == 1)
+        strcpy(filename, "gk.txt");
+    else if (choice == 2)
+        strcpy(filename, "computer.txt");
+    else if (choice == 4)
+        strcpy(filename, "questions.txt");
+    else if (choice == 3)
+        strcpy(filename, "science.txt");
+    else
+    {
+        printf("\n%sInvalid choice! Exiting game...%s\n", RED, COLOR_END);
+        return 0;
+    }
+
+    int no_of_questions = read_questions(filename, &questions);
+
+    printf("\n\t\t%sLets Play the Game!%s\n", PINK, COLOR_END);
 
     play_game(questions, no_of_questions);
 
-    free(questions);
+    free(questions); // Free allocated memory
     return 0;
 }
 
@@ -248,7 +281,7 @@ void play_game(Question *questions, int no_of_questions)
             int value = use_lifeline(&questions[i], lifeline);
             if (value != 2)
             {
-                i--; // You need to decrement i before continue so the same question repeats:
+                i--;
                 continue;
             }
         }
@@ -262,7 +295,18 @@ void play_game(Question *questions, int no_of_questions)
         else
         {
             printf("%s\nWrong! Correct answer is %c.%s", RED, questions[i].correct_option, COLOR_END);
-            break;
+
+            if (lifeline[0] || lifeline[1] || lifeline[2])
+            {
+                printf("\n%sYou can still use a lifeline!%s\n", YELLOW, COLOR_END);
+                i--;
+                continue;
+            }
+            else
+            {
+                printf("\n%sNo lifelines left. Game Over!%s\n", RED, COLOR_END);
+                break;
+            }
         }
     }
     printf("\n\n%sGame Over! Your total winnings are: Rs %d%s\n", BLUE, money_won, COLOR_END);

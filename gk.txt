@@ -1,0 +1,80 @@
+What is the capital city of India?
+Delhi
+Mumbai
+Kolkata
+Chennai
+A
+10
+1000
+Which river is considered the holiest in India?
+Ganga
+Yamuna
+Kaveri
+Godavari
+A
+10
+2000
+Who was the first Prime Minister of India?
+Jawaharlal Nehru
+Mahatma Gandhi
+Indira Gandhi
+Lal Bahadur Shastri
+A
+10
+3000
+Which is the largest state in India by area?
+Maharashtra
+Uttar Pradesh
+Rajasthan
+Madhya Pradesh
+C
+15
+5000
+In which year did India gain independence?
+1945
+1947
+1950
+1952
+B
+15
+10000
+What is the national animal of India?
+Tiger
+Elephant
+Peacock
+Lion
+A
+15
+20000
+Which Indian state is known as "God's Own Country"?
+Kerala
+Goa
+Himachal Pradesh
+Uttarakhand
+A
+30
+40000
+Who was the founder of the Indian National Congress?
+A.O. Hume
+Dadabhai Naoroji
+Rammohan Roy
+Ishwar Chandra Vidyasagar
+A
+30
+80000
+What is the highest civilian award in India?
+Padma Shri
+Padma Bhushan
+Bharat Ratna
+Padma Vibhushan
+C
+45
+160000
+Who wrote the national anthem of India?
+Rabindranath Tagore
+Bankim Chandra Chatterjee
+Mahatma Gandhi
+Sarojini Naidu
+A
+60
+320000

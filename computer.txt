@@ -1,0 +1,80 @@
+What does CPU stand for?
+Central Processing Unit
+Computer Processing Unit
+Central Program Unit
+Control Processing Unit
+A
+10
+1000
+Which language is used for system programming?
+Python
+Java
+C
+HTML
+C
+10
+2000
+What is the brain of the computer?
+RAM
+Hard Disk
+CPU
+Monitor
+C
+10
+3000
+Which of the following is an operating system?
+MS Word
+Windows
+Google
+Chrome
+B
+15
+5000
+What does RAM stand for?
+Read Access Memory
+Random Access Memory
+Run Access Memory
+Real Access Memory
+B
+15
+10000
+Which device is used for input?
+Printer
+Monitor
+Keyboard
+Speaker
+C
+15
+20000
+What is the full form of HTML?
+Hyper Text Markup Language
+High Text Mark Language
+Hyperlink Markup Language
+Hyper Tool Markup Language
+A
+30
+40000
+Which storage is permanent?
+RAM
+Cache
+Hard Disk
+Register
+C
+30
+80000
+Which symbol is used for comments in C?
+//
+##
+%%
+**
+A
+45
+160000
+Which company developed Windows?
+Apple
+Google
+Microsoft
+IBM
+C
+60
+320000

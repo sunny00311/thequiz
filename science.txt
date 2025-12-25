@@ -1,0 +1,80 @@
+What is the chemical symbol of water?
+O2
+H2
+H2O
+HO
+C
+10
+1000
+Which planet is known as the Red Planet?
+Earth
+Mars
+Jupiter
+Venus
+B
+10
+2000
+What gas do plants absorb from the atmosphere?
+Oxygen
+Nitrogen
+Carbon Dioxide
+Hydrogen
+C
+10
+3000
+What is the boiling point of water?
+90°C
+95°C
+100°C
+110°C
+C
+15
+5000
+Which organ pumps blood in the human body?
+Brain
+Lungs
+Heart
+Kidney
+C
+15
+10000
+What force keeps us on the ground?
+Magnetism
+Friction
+Gravity
+Pressure
+C
+15
+20000
+Which vitamin is produced by sunlight?
+Vitamin A
+Vitamin B
+Vitamin C
+Vitamin D
+D
+30
+40000
+What part of plant conducts photosynthesis?
+Root
+Stem
+Leaf
+Flower
+C
+30
+80000
+Which gas is essential for respiration?
+Carbon Dioxide
+Oxygen
+Nitrogen
+Helium
+B
+45
+160000
+What is the unit of electric current?
+Volt
+Ohm
+Ampere
+Watt
+C
+60
+320000
