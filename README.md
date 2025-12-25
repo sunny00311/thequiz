@@ -1,4 +1,4 @@
-# 🎯 KBC Quiz Game in C (Terminal-Based)
+# 🎯  Quiz Game in C (Terminal-Based)
 
 A feature-rich **Kaun Banega Crorepati (KBC)** style quiz game built in **C**, designed to run in the terminal.  
 This project demonstrates core C programming concepts such as file handling, structures, timers, lifelines, and API integration—without using heavy external libraries.
